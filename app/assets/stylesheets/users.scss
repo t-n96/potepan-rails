@@ -1,0 +1,118 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$cBlue: midnightblue;
+$cWhite: #fff;
+$cBlack: #000;
+$cbackcolor: #fbc25b;
+
+body {
+  margin: 0;
+  color: $cBlue;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 120px;
+  background-color: $cbackcolor;
+}
+
+ul {
+  list-style:none
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  & h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  & p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.index {
+  text-align: center;
+  margin-top: 65px;
+  position: relative;
+
+  & .inner {
+    width: 90%;
+    margin: 0 auto;
+
+    &__table {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  & .btn {
+    text-decoration: none;
+    color: crimson;
+  }
+
+  & .new {
+    position: absolute;
+    left: 5%;
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid $cWhite;
+    border-radius: 30px;
+    color: $cBlue;
+    background-color: $cbackcolor;
+    font-size: 14px;
+  }
+
+  &__list {
+    position: absolute;
+    left: 25%;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+  }
+
+  &__create {
+    position: absolute;
+    right: 25%;
+    background-color: $cbackcolor;
+    padding: 15px;
+    border: 1px solid $cWhite;
+    border-radius: 30px;
+    color: crimson;
+  }
+}
+
+table th {
+  background-color: $cbackcolor;
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: antiquewhite;
+  padding: 10px 20px;
+}
+
+.notice {
+  background-color: #ccf;
+  padding: 5px;
+}
+
+input[type="text"] {
+  width: 230px;
+  height: 20px;
+}
+input[type="date"] {
+  width: 230px;
+  height: 20px;
+}
